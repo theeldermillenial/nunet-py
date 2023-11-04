@@ -31,6 +31,18 @@ This example will submit one of the example ML jobs provided for the NuNet Alpha
 program. This will break up the entire example into sections, and the complete example
 can be found at the end and in [the examples](example/simple_cpu.py).
 
+#### Install `nunet-py`
+
+During development of this tool a bug was found in
+[pycardano](https://github.com/python-cardano/pycardano), a dependency of this project.
+The bug was fixed and merged into the project, but the fix has not been released so
+the project cannot be pushed to PyPI. The best way to install and get started is to
+install directly from this repo:
+
+```bash
+pip install git+https://github.com/theeldermillenial/nunet-py
+```
+
 #### Initializing the NuNet Adapter
 
 Assuming you made the `.env` with your preprod wallet seed phrase as described in under
