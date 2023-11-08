@@ -2,7 +2,7 @@
 
   <img src="https://raw.github.com/theeldermillenial/nunet-py/master/imgs/nunet-py.png" alt="nunet-py" width="200" height="auto" />
   <p>
-    A Python client for Iagon!
+    A Python client for NuNet!
   </p>
 
 <!-- Badges -->
