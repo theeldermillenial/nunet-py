@@ -1,4 +1,57 @@
-# nunet-py
+<div align="center">
+
+  <img src="https://raw.github.com/theeldermillenial/nunet-py/master/imgs/nunet-py.png" alt="nunet-py" width="200" height="auto" />
+  <p>
+    A Python client for Iagon!
+  </p>
+
+<!-- Badges -->
+<p>
+  <a href="https://pypi.org/project/nunet-py/">
+    <img src="https://img.shields.io/pypi/v/nunet-py" alt="version" />
+  </a>
+  <a href="https://pypi.org/project/nunet-py/">
+    <img src="https://img.shields.io/pepy/dt/nunet-py" alt="downloads" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/code_format-black-black" alt="open issues" />
+  </a>
+  <a href="https://github.com/theeldermillenial/nunet-py/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/theeldermillenial/nunet-py.svg" alt="license" />
+  </a>
+</p>
+
+<h4>
+    <a href="https://github.com/theeldermillenial/nunet-py">Documentation (Coming Soon!)</a>
+  <span> · </span>
+    <a href="https://github.com/theeldermillenial/nunet-py/issues/">Report Bug</a>
+  <span> · </span>
+    <a href="https://github.com/theeldermillenial/nunet-py/issues/">Request Feature</a>
+  </h4>
+</div>
+
+`nunet-py` is a Python package for running jobs on NuNet!
+
+<!-- Table of Contents -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#introduction">Introduction</a>
+    </li>
+    <li>
+      <a href="#how-do-i-use-it">How To</a>
+      <ul>
+        <li><a href="#getting-started">Pre-Requisites</a></li>
+        <li><a href="#submit-a-job">Submit a Job</a></li>
+        <li><a href="#full-example">Full Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-can-i-help">Contribute</a></li>
+  </ol>
+</details>
+
+## Introduction
 
 `nunet-py` is a Python client for submitting jobs to NuNet. It is intended to be a
 direct interface to the DMS.
@@ -143,7 +196,7 @@ and the code will exit when it completes.
 
 Once this happens, you've successfully run your first job on NuNet!
 
-#### Full example
+### Full example
 
 ```python
 import os
@@ -200,4 +253,15 @@ txid = adapter.pay(job_request)
 
 for msg_type, msg in adapter.job(txid):
     print(msg, flush=True)
+```
+
+## How can I help?
+
+I can always use volunteers to take on specific chunks of the project. I work on this
+in my free time, along with some other Cardano projects. You can help by reaching out
+on Twitter or Discord. Alternatively, sending tips is also helpful to cover the costs
+of production. Tips can be sent to:
+
+```bash
+addr1q9hw8fuex09vr3rqwtn4fzh9qxjlzjzh8aww684ln0rv0cfu3f0de6qkmh7c7yysfz808978wwe6ll30wu8l3cgvgdjqa7egnl
 ```

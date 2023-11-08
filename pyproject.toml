@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nunet"
-version = "0.0.1"
+version = "0.1.0"
 description = ""
 authors = ["Elder Millenial <eldermillenial@protonmail.com>"]
 readme = "README.md"
@@ -11,9 +11,9 @@ python = "^3.10"
 websockets = "^11.0.3"
 requests = "^2.31.0"
 python-dotenv = "^1.0.0"
-pycardano = { git = "https://github.com/theeldermillenial/pycardano.git" }
 types-requests = "^2.31.0.10"
 pydantic = "^2.4.2"
+pycardano = "^0.10.0"
 
 
 [tool.poetry.group.dev.dependencies]
