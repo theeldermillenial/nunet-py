@@ -22,7 +22,7 @@ from websockets.sync.client import connect
 
 import nunet.models
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 load_dotenv()
 

@@ -174,10 +174,11 @@ class JobConfig(BaseModel):
     signature: str
 
     @field_validator("oracle_message", mode="before")
-    def validate_oracle(  # noqa: ANN201, D102
-        self,
+    @classmethod
+    def validate_oracle(  # noqa: D102
+        cls,
         v: Union[str, bytes, pycardano.serialization.ByteString],
-    ):
+    ) -> pycardano.serialization.ByteString:
         if not isinstance(v, (str, bytes, pycardano.serialization.ByteString)):
             raise TypeError(
                 "oracle message must be one of (str, bytes, "
